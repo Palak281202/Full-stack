@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-
+import classes from './FeedbackModal.module.css'
 export default function FeedbackModal({ isOpen, message, onClose }) {
   return (
     <AnimatePresence>
@@ -21,7 +21,7 @@ export default function FeedbackModal({ isOpen, message, onClose }) {
             <div className="text-2xl font-semibold text-pink-600 mb-4">Mood Check-in</div>
             <div className="text-gray-700">{message}</div>
             <button
-              className="mt-6 bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg"
+              className={classes.button}
               onClick={onClose}
             >
               Close

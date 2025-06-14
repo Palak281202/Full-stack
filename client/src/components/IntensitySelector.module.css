@@ -1,23 +1,65 @@
-.color{
+.color {
+  color: rgb(91, 43, 104);
+  border-radius: 3%;
+}
+.slider {
+  color: rgb(91, 43, 104);
+  align-items: center;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1600px;
+}
+.first {
+  background-image: linear-gradient(
+    rgb(145, 185, 255),
+    rgb(201, 221, 255),
+    rgb(215, 169, 255),
+    rgb(228, 149, 244),
+    rgb(225, 90, 252),
+    rgb(225, 90, 252),
+    rgb(248, 143, 255),
+    pink,
+    rgb(255, 218, 241),
+    rgb(255, 218, 241),
+    pink,
+    rgb(238, 152, 255),
+    rgb(232, 126, 253),
+    rgb(247, 140, 255),
+    rgb(250, 202, 232),
+    rgb(254, 197, 233),
+    pink,
+    rgb(237, 149, 255),
+    rgb(225, 90, 252)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 51px 540px;
+  width: 100%;
+  position: relative;
+}
+.h1{
+  font-size: 2rem;
+    width: 450px;
 
-    color: rgb(91, 43, 104);
-    border-radius: 3%;
 }
-.slider{
-    color: rgb(91, 43, 104);
-    align-items: center;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1600px;
+.button {
+  background-color: #036e03;
+  color: white;
+  margin: 16px;
+  padding: 15px;
+  border-radius: 20px;
 }
 
-/* .para{
-    text-decoration: solid;
-} */
+.button:hover {
+  border-color: #0d5844;
+  background-color: rgb(164, 236, 223);
+}

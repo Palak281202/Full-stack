@@ -5,12 +5,33 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    rgb(145, 185, 255),
+    rgb(201, 221, 255),
+    rgb(215, 169, 255),
+    rgb(228, 149, 244),
+    rgb(225, 90, 252),
+    rgb(225, 90, 252),
+    rgb(248, 143, 255),
+    pink,
+    rgb(255, 218, 241),
+    rgb(255, 218, 241),
+    pink,
+    rgb(238, 152, 255),
+    rgb(232, 126, 253),
+    rgb(247, 140, 255),
+    rgb(250, 202, 232),
+    rgb(254, 197, 233),
+    pink,
+    rgb(237, 149, 255),
+    rgb(225, 90, 252)
+  );
 }
 
 a {
@@ -47,7 +68,8 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #0d5844;
+  background-color: rgb(164, 236, 223);
 }
 button:focus,
 button:focus-visible {

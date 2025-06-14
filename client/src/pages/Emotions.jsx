@@ -36,7 +36,8 @@ export default function Emotions() {
       <div className={classes.text}>
         Choose the feeling that is closest to how you are feeling.
       </div>
-      <button onClick={() => navigate('/intensity')}>Complete</button>
+      {selected !== null && <p>{selected.emoji} {selected.label}</p>}
+      <button onClick={() => navigate('/intensity')} className={classes.button}>Complete</button>
     </div>
   );
 }

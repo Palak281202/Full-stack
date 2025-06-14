@@ -2,7 +2,8 @@ import React from "react";
 import classes from "./Home.module.css";
 export default function Home() {
   return (
-    <div className={classes.main}>
+    <div className={classes.first}>
+      <div className={classes.main}>
       <h1 className={classes.heading}>Instructions</h1>
       <div className={classes.secdiv}>
         <p className={classes.para}>
@@ -17,6 +18,7 @@ export default function Home() {
         </p>
       </div>
       <a className={classes.button} href="/emotion">Start Check-in</a>
+    </div>
     </div>
   );
 }
