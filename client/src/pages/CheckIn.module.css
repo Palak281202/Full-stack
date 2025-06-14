@@ -64,3 +64,9 @@
   text-align: center;
   width: 1520px;
 }
+
+.img{
+  height: 55px;
+  border-radius: 50%;
+  width: 55px;
+}
