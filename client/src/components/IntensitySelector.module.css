@@ -1,0 +1,23 @@
+.color{
+
+    color: rgb(91, 43, 104);
+    border-radius: 3%;
+}
+.slider{
+    color: rgb(91, 43, 104);
+    align-items: center;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+}
+
+/* .para{
+    text-decoration: solid;
+} */

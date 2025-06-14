@@ -1,0 +1,68 @@
+.mainheading {
+  color: rgb(34, 2, 85);
+  text-align: center;
+  font-size: 70px;
+  font: bolder;
+  padding: 29px;
+}
+
+.maindiv {
+  width: 1500px;
+  margin: 2px;
+  /* height: 700px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    rgb(145, 185, 255),
+    rgb(201, 221, 255),
+    rgb(215, 169, 255),
+    rgb(228, 149, 244),
+    rgb(225, 90, 252),
+    rgb(225, 90, 252),
+    rgb(248, 143, 255),
+    pink,
+    rgb(255, 218, 241),
+    rgb(255, 218, 241),
+    pink,
+    rgb(238, 152, 255),
+    rgb(232, 126, 253),
+    rgb(247, 140, 255),
+    rgb(250, 202, 232),
+    rgb(254, 197, 233),
+    pink,
+    rgb(237, 149, 255),
+    rgb(225, 90, 252)
+  );
+}
+
+.emotions {
+  background-color: rgba(245, 245, 220, 0.331);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 1218px;
+  align-items: center;
+  margin: 150px 18px;
+  padding: 0px 43px;
+}
+
+.text {
+  text-align: center;
+  color: rgb(34, 2, 85);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: larger;
+  /* font-style: italic; */
+  padding: 20px;
+}
+
+.emotion {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
