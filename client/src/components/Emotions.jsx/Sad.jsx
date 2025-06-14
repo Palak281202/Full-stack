@@ -28,7 +28,6 @@ export default function Sad() {
           ></input>
           <label className={classes.label} for="sad5">Disheartened </label>
         </div>
-        <button className={classes.button}>Submit</button>
       </div>
     </div>
   );

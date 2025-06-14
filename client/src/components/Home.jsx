@@ -16,7 +16,7 @@ export default function Home() {
           ✓ Choose the option which best describes your mood.
         </p>
       </div>
-      <button className={classes.button}>Start Check-in</button>
+      <a className={classes.button} href="/emotion">Start Check-in</a>
     </div>
   );
 }

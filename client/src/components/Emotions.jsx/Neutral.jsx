@@ -49,7 +49,6 @@ export default function Neutral() {
         ></input>
         <label className={classes.label} for="neutral6">Okay </label>
       </div>
-      <button className={classes.button}>Submit</button>
     </div>
   );
 }

@@ -49,7 +49,6 @@ export default function Content() {
         ></input>
         <label className={classes.label} for="content6">Relieved </label>
       </div>
-      <button className={classes.button}>Submit</button>
     </div>
   );
 }

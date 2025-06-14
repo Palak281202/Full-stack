@@ -11,6 +11,8 @@ import Angry from "./Emotions.jsx/Angry";
 import Neutral from "./Emotions.jsx/Neutral";
 import Content from "./Emotions.jsx/content";
 import Awe from "./Emotions.jsx/Awe";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const theme = createTheme();
 
@@ -20,6 +22,8 @@ export default function IntensitySelector({ emotion }) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  
+  const navigate = useNavigate();
 
   return (
     <ThemeProvider theme={theme} className={classes.main}>
@@ -61,6 +65,7 @@ export default function IntensitySelector({ emotion }) {
         {emotion === "Content" && <Content/>}
         {emotion === "Awe" && <Awe/>}
       </Box>
+      <Link onClick={() => navigate('/checkIn')} className={classes.completeButton}>Complete</Link>
     </ThemeProvider>
   );
 }

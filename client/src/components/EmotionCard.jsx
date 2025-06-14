@@ -10,8 +10,8 @@ export default function EmotionCard({ emotion, onClick }) {
       onClick={onClick}
       className={classes.emotions}
     >
-      <div className="text-3xl">{emotion.emoji}</div>
-      <div className="mt-2 font-semibold">{emotion.label}</div>
+      <div className="text-3xl">{emotion.emoji && emotion.emoji}</div>
+      <div className="mt-2 font-semibold">{emotion.emoji && emotion.label}</div>
     </motion.div>
   );
 }

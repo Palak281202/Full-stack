@@ -7,6 +7,7 @@ import FeedbackModal from "../components/FeedbackModal";
 import classes from "./CheckIn.module.css";
 import IntensitySelector from "../components/IntensitySelector";
 import Home from "../components/Home";
+import { useEmotion } from "../store/EmotionsStore";
 
 const emotions = [
   { label: "Happy", emoji: "😊" },
@@ -18,7 +19,7 @@ const emotions = [
 ];
 
 export default function CheckIn() {
-  const [selected, setSelected] = useState(null);
+  const { selected } = useEmotion();
   const [notes, setNotes] = useState("");
   const [loading, setLoading] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
@@ -40,38 +41,16 @@ export default function CheckIn() {
       setModalOpen(true);
     } finally {
       setLoading(false);
-    }
+    } 
   };
 
   return (
     <div className={classes.maindiv}>
-      <Home/>
-      <div className={classes.emotions}>
-        <div className={classes.mainheading}>How are you feeling today?</div>
-        <div className={classes.text}>
-          No matter how you're feeling, it's okay. We're here to support you.
-        </div>
-        <div className={classes.emotion}>
-          {emotions.map((emotion, idx) => (
-            <EmotionCard
-              key={idx}
-              emotion={emotion}
-              isSelected={selected?.label === emotion.label}
-              onClick={() => setSelected(emotion)}
-            />
-          ))}
-        </div>
-        <div className={classes.text}>
-          Choose the feeling that is closest to how you are feeling.
-        </div>
-        <button>Complete</button>
-      </div>
-      {selected === null ? (
-        <p></p>
-      ) : (
-        <IntensitySelector emotion={selected.label} />
-      )}
-      <NotesInput notes={notes} setNotes={setNotes} emotion = {selected ? selected.label : null}/>
+      <NotesInput
+        notes={notes}
+        setNotes={setNotes}
+        emotion={selected ? selected.label : null}
+      />
       <SubmitButton
         isDisabled={!selected}
         isLoading={loading}

@@ -17,7 +17,6 @@ export default function Awe() {
         <input className={classes.input} type="checkbox" id="awe6" name="awe6" value="Observant"></input>
         <label className={classes.label} for="awe6">Observant </label>
       </div>
-      <button className={classes.button}>Submit</button>
     </div>
   );
 }

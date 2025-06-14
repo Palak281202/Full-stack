@@ -34,7 +34,6 @@ export default function Angry() {
         <input className={classes.input} type="checkbox" id="angry6" name="angry6" value="Touchy"></input>
         <label className={classes.label} for="angry6">Touchy </label>
       </div>
-      <button className={classes.button}>Submit</button>
     </div>
   );
 }

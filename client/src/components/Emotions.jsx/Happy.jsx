@@ -39,7 +39,6 @@ export default function Happy() {
         ></input>
         <label className={classes.label} for="happy6">Chipper </label>
       </div>
-      <button className={classes.button}>Submit</button>
     </div>
   );
 }
