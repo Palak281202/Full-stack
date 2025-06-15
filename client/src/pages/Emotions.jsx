@@ -4,11 +4,11 @@ import classes from "./CheckIn.module.css";
 import EmotionCard from "../components/EmotionCard";
 import { useEmotion } from "../store/EmotionsStore";
 import happyimg from "../assets/happy.png";
-import sadimg from "../assets/sad.png";
+import sadimg from "../assets/sad2.png";
 import neutralimg from "../assets/neutral.png";
 import contentimg from "../assets/content.png";
 import angerimg from "../assets/anger.png";
-import aweimg from "../assets/awe.png";
+import aweimg from "../assets/awe2.png";
 
 export default function Emotions() {
   const anger = <img className={classes.img} src={angerimg} alt="anger" />;
@@ -35,7 +35,7 @@ export default function Emotions() {
 
   return (
     <div className={classes.emotions}>
-      <div className={classes.mainheading}>𓆞How are you feeling today?𓆝 </div>
+      <div className={classes.mainheading}>How are you feeling today? </div>
       <div className={classes.text}>
         ╰┈➤No matter how you're feeling, it's okay. We're here to support you.
       </div>
@@ -50,7 +50,7 @@ export default function Emotions() {
         ))}
       </div>
       <div className={classes.text}>
-        Choose the feeling that is closest to how you are feeling.☁︎
+        Choose the feeling that is closest to how you are feeling.
       </div>
       {selected !== null && (
         <p>
@@ -60,7 +60,7 @@ export default function Emotions() {
       <div className={classes.buttons}>
         <div>
           <button
-          onClick={() => navigate("/intensity")}
+          onClick={() => navigate("/activities")}
           className={classes.button}
         >
           Complete

@@ -41,33 +41,39 @@ export default function SubmitingEmotion() {
       </div>
       <h3 className={classes.last_heading}>My recomendations 𓍯𓂃</h3>
       <div className={classes.cardflex}>
-        <div className={classes.carddiv}>
-          <h4>9 ways to deal with problem</h4>
-          <div className={classes.colcarddiv}>
-            <p className={classes.colcarddivp}>
-              [ ▸ ] Video <br />⏱ 9 min
-            </p>
-            <img className={classes.cardimg} src={bee_error} alt="" />
+        <a href="">
+          <div className={classes.carddiv}>
+            <h4>9 ways to deal with problem</h4>
+            <div className={classes.colcarddiv}>
+              <p className={classes.colcarddivp}>
+                [ ▸ ] Video <br />⏱ 9 min
+              </p>
+              <img className={classes.cardimg} src={bee_error} alt="" />
+            </div>
           </div>
-        </div>
-        <div className={classes.carddiv}>
-          <h4>9 ways to deal with problem</h4>
-          <div className={classes.colcarddiv}>
-            <p className={classes.colcarddivp}>
-              ♫ Audio <br />⏱ 7 min
-            </p>
-            <img className={classes.cardimg} src={bee_error} alt="" />
+        </a>
+        <a href="">
+          <div className={classes.carddiv}>
+            <h4>9 ways to deal with problem</h4>
+            <div className={classes.colcarddiv}>
+              <p className={classes.colcarddivp}>
+                ♫ Audio <br />⏱ 7 min
+              </p>
+              <img className={classes.cardimg} src={bee_error} alt="" />
+            </div>
           </div>
-        </div>
-        <div className={classes.carddiv}>
-          <h4>9 ways to deal with problem</h4>
-          <div className={classes.colcarddiv}>
-            <p className={classes.colcarddivp}>
-              🗪 Text <br />⏱ 10 min
-            </p>
-            <img className={classes.cardimg} src={bee_error} alt="" />
+        </a>
+        <a href="">
+          <div className={classes.carddiv}>
+            <h4>9 ways to deal with problem</h4>
+            <div className={classes.colcarddiv}>
+              <p className={classes.colcarddivp}>
+                🗪 Text <br />⏱ 10 min
+              </p>
+              <img className={classes.cardimg} src={bee_error} alt="" />
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <Link onClick={() => navigate("/checkIn")} className={classes.backbutton}>
         Back

@@ -10,6 +10,7 @@ import Intensity from './pages/Intensity';
 import SubmitingEmotion from './components/SubmitingEmotion';
 import Reminder from './components/Reminder';
 import Analytics from './components/Analytics';
+import Activities from './pages/Activities.jsx';
 
 const router = createBrowserRouter([
   {path : '/', element: <Home/>},
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   {path: '/submitingCheckIn', element: <SubmitingEmotion/>},
   {path: '/reminder', element: <Reminder/>},
   {path: '/analytics', element: <Analytics/>},
+  {path: '/activities', element: <Activities/>},
 ]);
 
 

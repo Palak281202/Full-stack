@@ -62,7 +62,7 @@ export default function CheckIn() {
           isLoading={loading}
           onClick={handleSubmit}
         />
-        <Link  className={classes.backbutton} onClick={()=>navigate('/intensity')}>Back</Link>
+        <Link  className={classes.backbutton} onClick={()=>navigate('/activities')}>Back</Link>
         {/* <a href="/intensity" className={classes.backbutton}>
           Back
         </a> */}

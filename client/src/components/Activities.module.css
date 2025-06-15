@@ -1,0 +1,99 @@
+#root {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 250pxpx;
+  /* align-items: center; */
+  padding: 2rem;
+  width: 100%;
+  padding-left: 100px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  /* text-align: center; */
+  padding-left: 100px;
+  padding-bottom: 1.5rem;
+}
+
+.array {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.input {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  transition: background-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.input:checked + .label {
+  background-color: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 1rem;
+  padding-left: 100px;
+}
+
+.button,
+.backbutton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #017236;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.backbutton {
+  background-color: #81b791;
+  color: black;
+}
+
+.button:hover {
+  background-color: #94f1a6;
+}
+
+.backbutton:hover {
+  background-color: #195a07;
+  color: white;
+}

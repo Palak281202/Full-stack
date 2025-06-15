@@ -48,7 +48,7 @@ export default function AlarmSetter() {
 
   return (
     <div className={classes.alarm_container}>
-      <h2>Set Reminder</h2>
+      <h1 className={classes.h1}>❀ Set Reminder ❀</h1>
       <img className={classes.clockimg} src={clock} alt="clock" />
       <div className={classes.time_picker}>
         <input
@@ -81,7 +81,7 @@ export default function AlarmSetter() {
             onClick={() => toggleDay(day)}
           >
             {day}
-          </button>
+          </button> 
         ))}
       </div>
 

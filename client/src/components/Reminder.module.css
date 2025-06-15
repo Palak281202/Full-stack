@@ -8,12 +8,17 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   width: 1200px;
   margin: 50px 100px;
+  margin: 0px 130px;
 }
 
 .clock_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.h1{
+  margin: 2rem 0rem 3.5rem 0rem;
 }
 
 .clockimg {
@@ -39,6 +44,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.buttondiv{
+display: flex;
 }
 
 .clock {
@@ -103,9 +112,9 @@
 .time_picker select {
   background-color: #ffeab0;
   font-size: 18px;
-  padding: 4px;
+  padding: 10px;
   margin: 0 5px;
-  width: 60px;
+  width: 80px;
   text-align: center;
   border-radius: 10px;
 }

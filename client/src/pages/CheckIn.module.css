@@ -30,7 +30,7 @@
   width: 90%;
   position: relative;
   align-items: center;
-  margin: 0px 116px;
+  margin: 0px 145px;
   padding: 0px 43px;
 }
 
@@ -88,6 +88,15 @@
 .h1 {
   text-align: center;
   width: 1520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1activity{
+  text-align: center;
+  width: 1420px;
   display: flex;
   flex-direction: column;
   align-items: center;
