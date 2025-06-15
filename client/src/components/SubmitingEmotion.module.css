@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1533px;
+}
+
+.img {
+  height: 250px;
+}
+
+.heading {
+}
+
+.p {
+}
+
+.div {
+}
+
+.button1 {
+  background-color: rgb(175, 243, 175);
+  margin: 0px 20px;
+  color: black;
+}
+
+.button2 {
+  background-color: rgb(1, 54, 1);
+  color: white;
+  margin: 0px 20px;
+}
+
+.last_heading {
+}
+
+.cardflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carddiv{
+    border-radius: 20px;
+    border-width: 4px;
+    margin: 20px;
+    border-color: rgb(1, 58, 1);
+    background-color: #ffffff66;
+    padding: 0px 10px
+}
+
+.cardimg{
+    height: 75px;
+}

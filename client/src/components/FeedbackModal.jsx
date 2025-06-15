@@ -20,12 +20,7 @@ export default function FeedbackModal({ isOpen, message, onClose }) {
           >
             <div className="text-2xl font-semibold text-pink-600 mb-4">Mood Check-in</div>
             <div className="text-gray-700">{message}</div>
-            <button
-              className={classes.button}
-              onClick={onClose}
-            >
-              Close
-            </button>
+            <a className={classes.button} href="/submitingCheckIn">Next</a>
           </motion.div>
         </motion.div>
       )}

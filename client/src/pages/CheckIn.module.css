@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .emotions {
@@ -60,13 +59,23 @@
   background-color: rgb(164, 236, 223);
 }
 
-.h1{
+.h1 {
   text-align: center;
   width: 1520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.img{
-  height: 55px;
+.img {
+  height: 100px;
   border-radius: 50%;
-  width: 55px;
+  width: 100px;
+}
+
+.error_img {
+  height: 100px;
+  height: 321px;
+  padding: 48px;
 }

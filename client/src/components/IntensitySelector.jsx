@@ -27,14 +27,14 @@ export default function IntensitySelector({ emotion }) {
     <div className={classes.first}>
       <ThemeProvider theme={theme} className={classes.main}>
         <h2 className={classes.h1}>
-          {emotion === "Happy" && "Happiness ia a complex emotion"}{" "}
-          {emotion === "Sad" && "Sadness ia a complex emotion"}
-          {emotion === "Angry" && "Anger ia a complex emotion"}
-          {emotion === "Content" && "Contentment ia a complex emotion"}
-          {emotion === "Neutral" && "Neutrality ia a complex emotion"}
-          {emotion === "Awe" && "Awe ia a complex emotion"}
+          {emotion === "Happy" && "⭑Happiness ia a complex emotion"}{" "}
+          {emotion === "Sad" && "⭑Sadness ia a complex emotion"}
+          {emotion === "Angry" && "⭑Anger ia a complex emotion"}
+          {emotion === "Content" && "⭑Contentment ia a complex emotion"}
+          {emotion === "Neutral" && "⭑Neutrality ia a complex emotion"}
+          {emotion === "Awe" && "⭑Awe ia a complex emotion"}
         </h2>
-        <p>Identifying your emotions is the first step to releasing them</p>
+        <p>⭑Identifying your emotions is the first step to releasing them</p>
         <CssBaseline />
         <Box sx={{ width: 300, m: 5 }} className={classes.slider}>
           <Stack
@@ -53,7 +53,7 @@ export default function IntensitySelector({ emotion }) {
             <p>Very {emotion}</p>
           </Stack>
           <p className={classes.para}>
-            The percentage {emotion} = {value}%
+            ⭑The percentage {emotion} = {value}%
           </p>
           {emotion === "Happy" && <Happy />}
           {emotion === "Sad" && <Sad />}
