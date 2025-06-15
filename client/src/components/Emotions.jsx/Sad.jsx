@@ -7,21 +7,21 @@ export default function Sad() {
       <div className={classes.main}>
         <p className={classes.heading}>What state is your sadness in?</p>
         <div className={classes.inputdiv}>
-          <input type="checkbox" id="sad1" name="sad1" value="Down" className={classes.input}></input>
+          <input type="radio" id="sad1" name="sad1" value="Down" className={classes.input}></input>
           <label className={classes.label} for="sad1">Down </label>
           <input  className={classes.input}
-            type="checkbox"
+            type="radio"
             id="sad2"
             name="sad2"
             value="Disappointment"
           ></input>
           <label className={classes.label} for="sad2">Disappointment </label>
-          <input className={classes.input} type="checkbox" id="sad3" name="sad3" value="Listless"></input>
+          <input className={classes.input} type="radio" id="sad3" name="sad3" value="Listless"></input>
           <label className={classes.label} for="sad3">Listless </label>
-          <input  className={classes.input}type="checkbox" id="sad4" name="sad4" value="Apathy"></input>
+          <input  className={classes.input}type="radio" id="sad4" name="sad4" value="Apathy"></input>
           <label className={classes.label} for="sad4">Apathy </label>
           <input className={classes.input}
-            type="checkbox"
+            type="radio"
             id="sad5"
             name="sad5"
             value="Disheartened"

@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import classes from './FeedbackModal.module.css'
+import { motion, AnimatePresence } from "framer-motion";
+import classes from "./FeedbackModal.module.css";
 export default function FeedbackModal({ isOpen, message, onClose }) {
   return (
     <AnimatePresence>
@@ -18,9 +18,17 @@ export default function FeedbackModal({ isOpen, message, onClose }) {
             exit={{ y: 50, opacity: 0 }}
             onClick={(e) => e.stopPropagation()} // prevent modal from closing when clicking inside
           >
-            <div className="text-2xl font-semibold text-pink-600 mb-4">Mood Check-in</div>
-            <div className="text-gray-700">{message}</div>
-            <a className={classes.button} href="/submitingCheckIn">Next</a>
+            <div className={classes.text}>
+              <div>
+                <div className="text-2xl font-semibold text-pink-600 mb-4">
+                  Mood Check-in
+                </div>
+                <div className="text-gray-700">{message}</div>
+              </div>
+              <a className={classes.button} href="/submitingCheckIn">
+                Next
+              </a>
+            </div>
           </motion.div>
         </motion.div>
       )}

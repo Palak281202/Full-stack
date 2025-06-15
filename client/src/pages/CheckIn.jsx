@@ -41,7 +41,7 @@ export default function CheckIn() {
       setModalOpen(true);
     } finally {
       setLoading(false);
-    } 
+    }
   };
 
   return (
@@ -50,6 +50,7 @@ export default function CheckIn() {
         notes={notes}
         setNotes={setNotes}
         emotion={selected ? selected.label : null}
+        emoji={selected ? selected.emoji : null}
       />
       <SubmitButton
         isDisabled={!selected}

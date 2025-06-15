@@ -32,6 +32,9 @@
     rgb(237, 149, 255),
     rgb(225, 90, 252)
   );
+  width: 100%;
+  position: relative;
+
 }
 
 a {
