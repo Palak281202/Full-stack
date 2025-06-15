@@ -8,6 +8,7 @@ import classes from "./CheckIn.module.css";
 import IntensitySelector from "../components/IntensitySelector";
 import Home from "../components/Home";
 import { useEmotion } from "../store/EmotionsStore";
+import { Link, useNavigate } from "react-router-dom";
 
 const emotions = [
   { label: "Happy", emoji: "😊" },
@@ -44,6 +45,9 @@ export default function CheckIn() {
     }
   };
 
+  
+  const navigate = useNavigate();
+
   return (
     <div className={classes.maindiv}>
       <NotesInput
@@ -52,11 +56,17 @@ export default function CheckIn() {
         emotion={selected ? selected.label : null}
         emoji={selected ? selected.emoji : null}
       />
-      <SubmitButton
-        isDisabled={!selected}
-        isLoading={loading}
-        onClick={handleSubmit}
-      />
+      <div className={classes.div}>
+        <SubmitButton
+          isDisabled={!selected}
+          isLoading={loading}
+          onClick={handleSubmit}
+        />
+        <Link  className={classes.backbutton} onClick={()=>navigate('/intensity')}>Back</Link>
+        {/* <a href="/intensity" className={classes.backbutton}>
+          Back
+        </a> */}
+      </div>
       <FeedbackModal
         isOpen={modalOpen}
         message={modalMessage}

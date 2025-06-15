@@ -1,8 +1,10 @@
 import React from "react";
 import classes from "./Home.module.css";
 import bee_complete from '../assets/bee_complete.png';
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className={classes.first}>
       <div className={classes.main}>
@@ -23,9 +25,10 @@ export default function Home() {
             ✓ Choose the option which best describes your mood.
           </p>
         </div>
-        <a className={classes.button} href="/emotion">
+        <Link className={classes.button} onClick={()=>navigate('/emotion')}>Start Check-in</Link>
+        {/* <a className={classes.button} href="/emotion">
           Start Check-in
-        </a>
+        </a> */}
       </div>
     </div>
   );

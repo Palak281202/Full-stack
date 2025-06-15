@@ -52,6 +52,25 @@
   align-items: center;
 }
 
+.buttons{
+  display: flex;
+}
+
+.homebutton{
+  border-color: #1b3817;
+  background-color: #84c27c;
+  color: black;
+  margin: 16px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.homebutton:hover{
+  background-color: #036e03;
+  color: white;
+
+}
+
 .button {
   background-color: #036e03;
   color: white;
@@ -61,7 +80,8 @@
 }
 
 .button:hover {
-  border-color: #0d5844;
+  border-style: solid;
+  border-width: 2px;
   background-color: rgb(164, 236, 223);
 }
 
@@ -84,4 +104,19 @@
   height: 100px;
   height: 321px;
   padding: 48px;
+}
+
+.backbutton {
+  border-color: #1b3817;
+  background-color: #84c27c;
+  color: black;
+  margin: 16px;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: large;
+}
+
+.backbutton:hover {
+  background-color: #036e03;
+  color: white;
 }

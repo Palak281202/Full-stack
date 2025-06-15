@@ -56,3 +56,16 @@
 .colcarddivp{
     padding: 0px 13px 0px 0px ;
 }
+.backbutton {
+  border-color: #1b3817;
+  background-color: #84c27c;
+  color: black;
+  margin: 16px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.backbutton:hover {
+  background-color: #036e03;
+  color: white;
+}

@@ -56,6 +56,20 @@
   margin:25px;
 }
 
+.backbutton {
+  border-color: #1b3817;
+  background-color: #84c27c;
+  color: black;
+  margin: 16px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.backbutton:hover {
+  background-color: #036e03;
+  color: white;
+}
+
 .sad {
   display: inline-block;
   width: 12px;

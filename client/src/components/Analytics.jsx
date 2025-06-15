@@ -1,8 +1,10 @@
 import React from "react";
 import classes from "./Analytics.module.css";
 import MoodDay from "./MoodDay";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Analytics() {
+  const navigate = useNavigate();
   const moodData = {
     "2025-01-01": "",
     "2025-01-02": "content",
@@ -45,13 +47,13 @@ export default function Analytics() {
   const daysArray = Array.from({ length: daysInMonth }, (_, i) => {
     const date = new Date(year, month, i + 1);
     const dateStr = date.toISOString().split("T")[0];
-    console.log(dateStr)
+    console.log(dateStr);
     return {
       date: i + 1,
       mood: moodData[dateStr],
     };
   });
-  console.log(daysArray[0])
+  console.log(daysArray[0]);
   return (
     <div className={classes.main}>
       <div className={classes.days}>
@@ -97,9 +99,12 @@ export default function Analytics() {
             <span className={classes.content}></span> Content
           </div>
         </div>
-        <a href="/submitingCheckIn" className={classes.button}>
+        <Link
+          onClick={() => navigate("/submitingCheckIn")}
+          className={classes.button}
+        >
           Back
-        </a>
+        </Link>
       </div>
     </div>
   );

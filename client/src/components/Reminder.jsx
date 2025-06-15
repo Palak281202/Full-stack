@@ -1,8 +1,11 @@
 import classes from "./Reminder.module.css";
 import React, { useState, useEffect } from "react";
-import clock from '../assets/clock.gif'
+import clock from "../assets/clock.gif";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function AlarmSetter() {
+  const navigate = useNavigate();
   const [hour, setHour] = useState(3);
   const [minute, setMinute] = useState(0);
   const [ampm, setAmPm] = useState("am");
@@ -46,7 +49,7 @@ export default function AlarmSetter() {
   return (
     <div className={classes.alarm_container}>
       <h2>Set Reminder</h2>
-      <img className={classes.clockimg} src={clock} alt="clock"/>
+      <img className={classes.clockimg} src={clock} alt="clock" />
       <div className={classes.time_picker}>
         <input
           type="number"
@@ -82,10 +85,29 @@ export default function AlarmSetter() {
         ))}
       </div>
 
-      <a href="/submitingCheckIn" className={classes.save_btn} onClick={() => setAlarmSet(true)}>
-        Save
-      </a>
+      <div className={classes.buttons}>
+        <div>
+          <a
+            href="/submitingCheckIn"
+            className={classes.save_btn}
+            onClick={() => setAlarmSet(true)}
+          >
+            Save
+          </a>
+        </div>
+
+        <div>
+          <Link
+            onClick={() => navigate("/submitingCheckIn")}
+            className={classes.backbutton}
+          >
+            Back
+          </Link>
+          {/* <a href="/submitingCheckIn" className={classes.backbutton}>
+        Back
+      </a> */}
+        </div>
+      </div>
     </div>
   );
 }
-

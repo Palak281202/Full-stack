@@ -30,6 +30,9 @@
   border-style: solid;
   border-radius: 20px;
   background-color: #ffffffa6;
+  height: 48px;
+  width: 150px;
+  text-align: center;
 }
 
 .button {

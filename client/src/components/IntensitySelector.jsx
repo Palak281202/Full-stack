@@ -32,7 +32,8 @@ export default function IntensitySelector({ emotion }) {
           {emotion === "Happy" && "(≧ᗜ≦) Happiness ia a complex emotion"}{" "}
           {emotion === "Sad" && "(｡•́︿•̀｡) Sadness ia a complex emotion"}
           {emotion === "Angry" && "( ◺˰◿ ) Anger ia a complex emotion"}
-          {emotion === "Content" && "(,,>﹏<,,) Contentment ia a complex emotion"}
+          {emotion === "Content" &&
+            "(,,>﹏<,,) Contentment ia a complex emotion"}
           {emotion === "Neutral" && "(ᵕ—_—) Neutrality ia a complex emotion"}
           {emotion === "Awe" && "( •͈૦•͈ ) Awe ia a complex emotion"}
         </h2>
@@ -65,9 +66,17 @@ export default function IntensitySelector({ emotion }) {
           {emotion === "Content" && <Content />}
           {emotion === "Awe" && <Awe />}
         </Box>
-        <Link onClick={() => navigate("/checkIn")} className={classes.button}>
-          Complete
-        </Link>
+        <div className={classes.buttons}>
+          <Link onClick={() => navigate("/checkIn")} className={classes.button}>
+            Complete
+          </Link>
+          <Link
+            onClick={() => navigate("/emotion")}
+            className={classes.backbutton}
+          >
+            Back
+          </Link>
+        </div>
       </ThemeProvider>
     </div>
   );

@@ -1,6 +1,9 @@
 import { motion, AnimatePresence } from "framer-motion";
 import classes from "./FeedbackModal.module.css";
+import { Link, useNavigate } from "react-router-dom";
+
 export default function FeedbackModal({ isOpen, message, onClose }) {
+  const navigate = useNavigate();
   return (
     <AnimatePresence>
       {isOpen && (
@@ -25,9 +28,13 @@ export default function FeedbackModal({ isOpen, message, onClose }) {
                 </div>
                 <div className="text-gray-700">{message}</div>
               </div>
-              <a className={classes.button} href="/submitingCheckIn">
+              <Link
+                className={classes.button}
+                onClick={() => navigate("/submitingCheckIn")}
+              >Next</Link>
+              {/* <a className={classes.button} href="/submitingCheckIn">
                 Next
-              </a>
+              </a> */}
             </div>
           </motion.div>
         </motion.div>
