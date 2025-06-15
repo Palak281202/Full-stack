@@ -1,0 +1,21 @@
+:root {
+  --angry: #f44336;
+  --content: #2196f3;
+  --sad: black;
+  --happy: #4caf50;
+  --awe: #9c27b0;
+  --neutral: yellow;
+}
+
+.day {
+  width: 50px;
+  height: 50px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+}

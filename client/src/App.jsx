@@ -8,6 +8,8 @@ import { RouterProvider } from 'react-router-dom';
 import Emotions from './pages/Emotions';
 import Intensity from './pages/Intensity';
 import SubmitingEmotion from './components/SubmitingEmotion';
+import Reminder from './components/Reminder';
+import Analytics from './components/Analytics';
 
 const router = createBrowserRouter([
   {path : '/', element: <Home/>},
@@ -16,7 +18,9 @@ const router = createBrowserRouter([
   {path: '/intensity', element: <Intensity/>},
   {path: '/feedback', element: <FeedbackModal/>},
   {path: '/emotion', element: <Emotions/>},
-  {path: '/submitingCheckIn', element: <SubmitingEmotion/>}
+  {path: '/submitingCheckIn', element: <SubmitingEmotion/>},
+  {path: '/reminder', element: <Reminder/>},
+  {path: '/analytics', element: <Analytics/>},
 ]);
 
 

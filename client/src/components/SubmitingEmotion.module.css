@@ -10,28 +10,20 @@
   height: 250px;
 }
 
-.heading {
-}
-
-.p {
-}
-
-.div {
-}
-
 .button1 {
   background-color: rgb(175, 243, 175);
   margin: 0px 20px;
   color: black;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .button2 {
   background-color: rgb(1, 54, 1);
   color: white;
   margin: 0px 20px;
-}
-
-.last_heading {
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .cardflex{
@@ -46,9 +38,21 @@
     margin: 20px;
     border-color: rgb(1, 58, 1);
     background-color: #ffffff66;
-    padding: 0px 10px
+    padding: 0px 10px 10px 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardimg{
     height: 75px;
+}
+
+.colcarddiv{
+    display: flex;
+}
+
+.colcarddivp{
+    padding: 0px 13px 0px 0px ;
 }

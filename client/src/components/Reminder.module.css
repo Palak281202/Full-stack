@@ -1,0 +1,120 @@
+.main {
+}
+
+.alarm_container {
+  text-align: center;
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, 0.429);
+  border-radius: 26px;
+  padding: 20px;
+  width: 320px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 1200px;
+  margin: 50px 100px;
+}
+
+.clock_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clockimg {
+  height: 200px;
+  border-radius: 110px;
+}
+
+.clock {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border: 8px solid #4caf50;
+  border-radius: 50%;
+  margin: 10px 0;
+  background: #fefefe;
+}
+
+.hand {
+  position: absolute;
+  background: #333;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+}
+
+.hand.hour {
+  width: 4px;
+  height: 40px;
+  margin-left: -2px;
+  margin-top: -40px;
+  background-color: #b0ffb3;
+}
+
+.hand.minute {
+  width: 2px;
+  height: 60px;
+  background: #2e7d32;
+  background-color: #b0ffb3;
+  margin-left: -1px;
+  margin-top: -60px;
+}
+
+.center_dot {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.alarm_time {
+  margin-top: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.time_picker {
+  margin-top: 20px;
+}
+
+.time_picker input,
+.time_picker select {
+  background-color: #ffeab0;
+  font-size: 18px;
+  padding: 4px;
+  margin: 0 5px;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.button {
+  width: 65px;
+  height: 65px;
+  border-radius: 71%;
+  background: #04761e;
+  color: white;
+  margin: 0px 20px;
+}
+
+.button:hover {
+  color: black;
+  background-color: #4caf50;
+}
+
+.save_btn {
+  color: white;
+  background-color: #013b0e;
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.days{
+    margin: 0px 0px 30px 0px;
+}
