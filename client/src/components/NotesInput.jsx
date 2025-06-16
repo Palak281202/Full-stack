@@ -1,4 +1,4 @@
-import classes from './NOtesInput.module.css'
+import classes from './NotesInput.module.css'
 
 export default function NotesInput({ notes, setNotes, emotion, emoji }) {
   return (
