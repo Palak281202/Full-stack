@@ -14,7 +14,7 @@ export default function Intensity() {
         <h1 className={classes.h1activity}>
           ➤Select an emotion first 
           <img className={classes.error_img} src={bee_error} alt="error" />
-          <Link onClick={()=>{navigate('./emotion')}} className={classes.backbutton}>Back</Link>
+          <Link onClick={()=>{navigate('/emotion')}} className={classes.backbutton}>Back</Link>
         </h1>
       ) : (
         <Activities emotion={selected.label} />

@@ -44,6 +44,7 @@ export default function AlarmSetter() {
     }, 60000); // check every minute
 
     return () => clearInterval(interval);
+    
   }, [alarmSet, hour, minute, ampm, days]);
 
   return (
@@ -87,13 +88,13 @@ export default function AlarmSetter() {
 
       <div className={classes.buttons}>
         <div>
-          <a
-            href="/submitingCheckIn"
+          <Link
+            // href="/submitingCheckIn"
             className={classes.save_btn}
-            onClick={() => setAlarmSet(true)}
+            onClick={() => navigate('/submitingCheckIn')}
           >
             Save
-          </a>
+          </Link>
         </div>
 
         <div>
