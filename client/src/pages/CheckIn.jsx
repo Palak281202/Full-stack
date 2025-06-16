@@ -63,9 +63,6 @@ export default function CheckIn() {
           onClick={handleSubmit}
         />
         <Link  className={classes.backbutton} onClick={()=>navigate('/activities')}>Back</Link>
-        {/* <a href="/intensity" className={classes.backbutton}>
-          Back
-        </a> */}
       </div>
       <FeedbackModal
         isOpen={modalOpen}
