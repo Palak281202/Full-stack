@@ -1,14 +1,9 @@
-:root {
-  --angry: #f44336;
-  --content: #2196f3;
-  --sad: black;
-  --happy: #4caf50;
-  --awe: #9c27b0;
-  --neutral: yellow;
-}
-
 .main {
   margin: 0px 502px;
+  display: relative;
+  margin-left: 1900px;
+  /* padding: -12px; */
+  margin-top: -183px;
 }
 
 .days {
@@ -53,7 +48,7 @@
   gap: 10px;
   font-size: 14px;
   color: #444;
-  margin:25px;
+  margin: 25px;
 }
 
 .backbutton {

@@ -42,14 +42,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 51px 540px;
+  padding: 49px 701px;
+  margin-left: 27px;
   width: 100%;
-  position: relative;
+  margin-top: -270px;
+  /* position: relative; */
+  position: absolute;
+  /* margin-top: -2000px; */
+  /* margin-left: 230px; */
+  padding-bottom: 131px;
+  padding-right: 200px;
+  padding-right: 779px;
 }
 .h1 {
   font-size: 1.5rem;
   width: 450px;
   text-align: center;
+}
+
+.ptext {
+  width: 500px;
+  margin: -20px;
 }
 .button {
   background-color: #036e03;
@@ -78,7 +91,7 @@
   color: white;
 }
 
-.buttons{
+.buttons {
   display: flex;
+  margin: -59px;
 }
-

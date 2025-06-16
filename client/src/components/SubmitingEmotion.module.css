@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   width: 1520px;
+  position: absolute;
+  margin: -250px 0px 0px -60px;
 }
 
 .img {
@@ -35,7 +37,7 @@
 .carddiv{
     border-radius: 20px;
     border-width: 4px;
-    margin: 20px;
+    margin: 10px;
     border-color: rgb(1, 58, 1);
     background-color: #ffffff66;
     padding: 0px 10px 10px 10px;
@@ -60,7 +62,7 @@
   border-color: #1b3817;
   background-color: #84c27c;
   color: black;
-  margin: 16px;
+  margin: 0px 16px 10px 16px;
   padding: 15px;
   border-radius: 20px;
 }

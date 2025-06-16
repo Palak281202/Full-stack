@@ -71,11 +71,11 @@ export default function Activities() {
       </div>
 
       <div className={classes.buttons}>
-        <Link onClick={() => navigate("/checkIn")} className={classes.button}>
+        <Link onClick={() => navigate("/intensity")} className={classes.button}>
           Next
         </Link>
         <Link
-          onClick={() => navigate("/intensity")}
+          onClick={() => navigate("/emotion")}
           className={classes.backbutton}
         >
           Back

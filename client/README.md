@@ -19,3 +19,12 @@ npm install
 
 # Running the code
 npm run dev
+
+# Challenges Faced
+1. I used animations for the first time so that was quite challenges.
+2. Styling part is always a challenge for me
+
+# What packages I used
+1. react-router-dom
+2. @mui-materialui
+

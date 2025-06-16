@@ -38,7 +38,7 @@ export default function IntensitySelector({ emotion }) {
           {emotion === "Awe" && "( •͈૦•͈ ) Awe ia a complex emotion"}
         </h2>
         <p>{selected.emoji}</p>
-        <p>Identifying your emotions is the first step to releasing them</p>
+        <p className={classes.ptext}>Identifying your emotions is the first step to releasing them</p>
         <CssBaseline />
         <Box sx={{ width: 300, m: 5 }} className={classes.slider}>
           <Stack

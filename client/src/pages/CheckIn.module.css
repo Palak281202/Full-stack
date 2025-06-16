@@ -3,7 +3,7 @@
   text-align: center;
   font-size: 70px;
   font: bolder;
-  padding: 29px;
+  /* padding: 29px; */
 }
 
 .maindiv {
@@ -13,11 +13,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
 }
 
-.intensity{
+.intensity {
+  /* position: relative; */
+  /* width: 100%; */
   position: relative;
-  width: 100%;
+}
+
+.activity {
+  position: absolute;
+  margin: -200px 0px 0px -100px;
 }
 
 .emotions {
@@ -26,12 +33,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  width: 90%;
-  position: relative;
+  /* position: relative; */
+  /* width: 90%; */
+  /* position: relative; */
   align-items: center;
-  margin: 0px 145px;
-  padding: 0px 43px;
+  /* margin: 0px 145px; */
+  /* padding: 0px 43px; */
+  display: absolute;
+  margin: -150px 0px 0px 1500px;
 }
 
 .text {
@@ -41,7 +50,11 @@
   margin-bottom: 20px;
   font-size: larger;
   /* font-style: italic; */
-  padding: 20px;
+  /* padding: 20px; */
+}
+
+.div{
+  margin: -20px 0px;
 }
 
 .emotion {
@@ -52,11 +65,11 @@
   align-items: center;
 }
 
-.buttons{
+.buttons {
   display: flex;
 }
 
-.homebutton{
+.homebutton {
   border-color: #1b3817;
   background-color: #84c27c;
   color: black;
@@ -65,10 +78,9 @@
   border-radius: 20px;
 }
 
-.homebutton:hover{
+.homebutton:hover {
   background-color: #036e03;
   color: white;
-
 }
 
 .button {
@@ -94,7 +106,7 @@
   justify-content: center;
 }
 
-.h1activity{
+.h1activity {
   text-align: center;
   width: 1420px;
   display: flex;

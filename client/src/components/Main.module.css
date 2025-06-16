@@ -1,0 +1,19 @@
+.main{
+    background-color: white;
+    height: 698px;
+    width: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.link{
+    margin: 30px;
+    font-size: 30px;
+}
+
+/* .link:hover{
+    cursor: pointer;
+} */

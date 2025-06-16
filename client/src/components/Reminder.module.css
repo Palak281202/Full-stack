@@ -8,7 +8,8 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   width: 1200px;
   margin: 50px 100px;
-  margin: 0px 130px;
+  margin: -200px 130px;
+  position: absolute;
 }
 
 .clock_wrapper {
